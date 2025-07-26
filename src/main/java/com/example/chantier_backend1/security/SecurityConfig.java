@@ -25,7 +25,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/test/pdg").hasAuthority("PDG")
                         .requestMatchers("/api/test/demandeur").hasAuthority("Demandeur")
-                        .requestMatchers("/api/test/financier").hasAuthority("Acheteur/financier")
+                        .requestMatchers("/api/test/financier").hasAuthority("financier")
                         .requestMatchers("/api/test/Directeur_des_achats").hasAuthority("Directeur des achats")
                         .requestMatchers("/api/test/Responsable_des_achats").hasAuthority("Responsable des achats")
                         .requestMatchers("/api/test/Direction_Générale").hasAuthority("Direction Générale")
